@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>VoiceInput</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
@@ -11,86 +11,63 @@
   <section class="section">
     <div class="container">
       <h1 class="title">
-        Hello World
+        Voice Input
       </h1>
       <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        Send Voice <strong>Truth</strong>!
       </p>
+
 <div class="field">
-  <label class="label">Name</label>
+  <label class="label">Title</label>
   <div class="control">
-    <input class="input" type="text" placeholder="Text input">
+    <input class="input" type="text" name="title" placeholder="movie title">
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Username</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-check"></i>
-    </span>
-  </div>
-  <p class="help is-success">This username is available</p>
-</div>
-
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-  </div>
-  <p class="help is-danger">This email is invalid</p>
-</div>
-
-<div class="field">
-  <label class="label">Subject</label>
+  <label class="label">Published Year</label>
   <div class="control">
     <div class="select">
-      <select>
-        <option>Select dropdown</option>
-        <option>With options</option>
+      <select name="year">
+        <option>2018</option>
+        <option>2017</option>
+        <option>2016</option>
+        <option>2015</option>
+        <option>2014</option>
+        <option>2013</option>
+        <option>2012</option>
+        <option>2011</option>
+        <option>2010</option>
+        <option>2009</option>
+        <option>2008</option>
+        <option>2007</option>
+        <option>2006</option>
+        <option>2005</option>
+        <option>2004</option>
+        <option>2003</option>
+        <option>2002</option>
+        <option>2001</option>
+        <option>2000</option>
       </select>
     </div>
   </div>
 </div>
 
 <div class="field">
-  <label class="label">Message</label>
+  <label class="label">Score</label>
   <div class="control">
-    <textarea class="textarea" placeholder="Textarea"></textarea>
+    <input class="input" type="tel" name="score" placeholder="0 .. 100">
   </div>
 </div>
 
 <div class="field">
+  <label class="label">Review</label>
   <div class="control">
-    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
-    </label>
+    <textarea class="textarea" name="review" placeholder="review..."></textarea>
   </div>
 </div>
 
-<div class="field">
-  <div class="control">
-    <label class="radio">
-      <input type="radio" name="question">
-      Yes
-    </label>
-    <label class="radio">
-      <input type="radio" name="question">
-      No
-    </label>
-  </div>
-</div>
+<input class="slider is-fullwidth" step="1" min="0" max="100" value="50" type="range">
 
 <div class="field is-grouped">
   <div class="control">
