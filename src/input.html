@@ -20,7 +20,14 @@
 <div class="field">
   <label class="label">Title</label>
   <div class="control">
-    <input class="input" type="text" name="title" placeholder="movie title">
+    <input id="title" class="input" type="text" name="title" placeholder="movie title">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Genre</label>
+  <div class="control">
+    <input id="genre" class="input" type="text" name="genre" placeholder="SF">
   </div>
 </div>
 
@@ -28,7 +35,7 @@
   <label class="label">Published Year</label>
   <div class="control">
     <div class="select">
-      <select name="year">
+      <select name="year" id="year">
         <option>2018</option>
         <option>2017</option>
         <option>2016</option>
@@ -56,30 +63,31 @@
 <div class="field">
   <label class="label">Score</label>
   <div class="control">
-    <input class="input" type="tel" name="score" placeholder="0 .. 100">
+    <input id="score" class="input" type="tel" name="score" placeholder="0 .. 100">
   </div>
 </div>
 
 <div class="field">
   <label class="label">Review</label>
   <div class="control">
-    <textarea class="textarea" name="review" placeholder="review..."></textarea>
+    <textarea id="review" class="textarea" name="review" placeholder="review..."></textarea>
   </div>
 </div>
 
-<input class="slider is-fullwidth" step="1" min="0" max="100" value="50" type="range">
-
 <div class="field is-grouped">
   <div class="control">
-    <button class="button is-link">Submit</button>
+    <button id="submit" class="button is-link">Submit</button>
   </div>
   <div class="control">
-    <button class="button is-text">Cancel</button>
+    <button id="cancel" class="button is-text">Cancel</button>
   </div>
 </div>
 
 
 </div>
 </section>
-  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/all.js" defer></script>
+</body>
 </html>
