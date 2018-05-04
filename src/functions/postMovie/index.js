@@ -13,7 +13,7 @@ exports.postMovie = (req, res) => {
   const kind = 'movies';
   const name = Date.now();
   const movieKey = datastore.key([kind, name]);
-  const movieData = JSON.stringify(req.body);
+  const movieData = JSON.parse(req.body);
   const entity = {
     key: movieKey,
     data: movieData
@@ -21,7 +21,7 @@ exports.postMovie = (req, res) => {
 
   datastore.insert(entity).then(() => {
     // Task inserted successfully.
-    res.status(200).send('inserted');
+    res.status(200).send('inserted' + JSON.stringify(movieData));
     return;
   });
 };
