@@ -5,7 +5,7 @@ $(function() {
 
     const params = {
       title: $('#title').val(),
-      publishedYear: parseInt($('#year').val()),
+      publishedYear: ($('#year').val() === '----')? 0 : parseInt($('#year').val()),
       genre: $('#genre').val(),
       score: parseInt($('#score').val()),
       review: $('#review').val()
